@@ -7,7 +7,6 @@ const loadServices = () => {
 };
 
 const displayService = (services) => {
-  
   services.forEach((service) => {
     const parent = document.getElementById("service-container");
     const li = document.createElement("li");
@@ -39,7 +38,8 @@ const loadteachers = (search) => {
   document.getElementById("spinner").style.display = "block";
   console.log(search);
   fetch(
-    `https://brainwave-zc9o.onrender.com/teacher/list/?search=${search ? search : ""
+    `https://brainwave-zc9o.onrender.com/teacher/list/?search=${
+      search ? search : ""
     }`
   )
     .then((res) => res.json())
@@ -64,8 +64,16 @@ const displyteachers = (teachers) => {
     const div = document.createElement("div");
     div.classList.add("doc-card");
     div.innerHTML = `
-          <img class="doc-img" src=${teacher.image} alt="" />
-                <h4>${teacher?.full_name}</h4>
+    
+         
+
+          <div class="col">
+          <div class="card custom-bg-color-card4">
+            <div class="text-center">
+            <img class="doc-img" src=${teacher.image} alt="" />
+            </div>
+            <div class="card-body text-center">
+            <h4>${teacher?.full_name}</h4>
                 <h6>${teacher?.designation[0]}</h6>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
@@ -75,19 +83,24 @@ const displyteachers = (teachers) => {
                 <p>
                 
                 ${teacher?.teaching_area?.map((item) => {
-      return `<button>${item}</button>`;
-    })}
+                  return `<button class="mx-2 my-2">${item}</button>`;
+                })}
                 </p>
-  
-                <button > <a target="_blank" href="teacher.html?teacherId=${teacher.id
-      }">Details</a> </button>
-          `;
+              <button type="button" class="text-black btn btn-light  mb-4">
+              <a target="_blank" href="teacher.html?teacherId=${
+                teacher.id
+              }">Details <i class="fa-solid fa-arrow-right"></i></a> 
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+        `;
 
     parent.appendChild(div);
   });
 };
-
-
 
 const loadDesignation = () => {
   fetch("https://brainwave-zc9o.onrender.com/teacher/designation/")
@@ -156,4 +169,3 @@ loadSpecialization();
 loadServices();
 loadteachers();
 loadReview();
-

@@ -3,13 +3,12 @@ const getparams = () => {
   loadTime(param);
   fetch(`https://brainwave-zc9o.onrender.com/teacher/list/${param}`)
     .then((res) => res.json())
-    .then((data) => 
-      displayDetails(data));
-      fetch(
-        `https://brainwave-zc9o.onrender.com/teacher/reviews/?teacher_id=${param}`
-      )
-        .then((res) => res.json())
-        .then((reviews) => teacherReview(data));
+    .then((data) => displayDetails(data));
+  fetch(
+    `https://brainwave-zc9o.onrender.com/teacher/reviews/?teacher_id=${param}`
+  )
+    .then((res) => res.json())
+    .then((reviews) => teacherReview(data));
 };
 const teacherReview = (reviews) => {
   reviews.forEach((review) => {
@@ -33,17 +32,16 @@ const displayDetails = (teacher) => {
   div.classList.add("doc-details-container");
   div.innerHTML = `
     <div class="teacher-img">
-      <img class="img-thumbnail" src="${teacher.image}" alt="${teacher.full_name
-    }" />
+      <img class="" src="${teacher.image}" alt="${teacher.full_name}" />
     </div>
     <div class="doc-info">
       <h1>${teacher.full_name}</h1>
       ${teacher.teaching_area.map((item) => {
-      return `<button class="doc-detail-btn">${item}</button>`;
-    })}
+        return `<button class="doc-detail-btn">${item}</button>`;
+      })}
       ${teacher.designation.map((item) => {
-      return `<h4>${item}</h4>`;
-    })}
+        return `<h4>${item}</h4>`;
+      })}
       <p class="w-50">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quibusdam
         quis excepturi tempore. Eius, qui!
@@ -78,7 +76,6 @@ const loadTime = (id) => {
       console.log(data);
     });
 };
-
 
 const handleAppointment = () => {
   const param = new URLSearchParams(window.location.search).get("teacherId");
@@ -121,7 +118,6 @@ const loadstudentId = () => {
       localStorage.setItem("student_id", data[0].id);
     });
 };
-
 
 loadTime();
 getparams();
