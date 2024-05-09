@@ -59,7 +59,7 @@ const loadteachers = (search) => {
 
 const displyteachers = (teachers) => {
   teachers?.forEach((teacher) => {
-    // console.log(doctor);
+    
     const parent = document.getElementById("teachers");
     const div = document.createElement("div");
     div.classList.add("doc-card");
@@ -87,7 +87,7 @@ const displyteachers = (teachers) => {
                 })}
                 </p>
               <button type="button" class="text-black btn btn-light  mb-4">
-              <a target="_blank" href="teacher.html?teacherId=${
+              <a target="_blank" href="teacher.html?id=${
                 teacher.id
               }">Details <i class="fa-solid fa-arrow-right"></i></a> 
               </button>
@@ -162,7 +162,32 @@ const displayReview = (reviews) => {
   });
 };
 
-//   Calling Functions
+const handleLogin = (event) => {
+  event.preventDefault();
+  const username = getValue("login-username");
+  const password = getValue("login-password");
+  console.log(username, password);
+  if ((username, password)) {
+    fetch("https://brainwave-zc9o.onrender.com/student/login/", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ username, password }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+
+        if (data.token && data.user_id) {
+          localStorage.setItem("token", data.token);
+          localStorage.setItem("user_id", data.user_id);
+          window.location.href = "index.html";
+        }
+      });
+  }
+};
+
+
+
 
 loadDesignation();
 loadSpecialization();

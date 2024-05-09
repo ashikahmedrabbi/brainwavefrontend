@@ -170,10 +170,10 @@ border-radius: 100px;
   padding: 30px;
   gap: 50px;
   width: 50%;
-  margin: 50px;
+  margin: auto;
 }
 .doc-details-container img{
-  width: 400px;
+  width: 200px;
   height: 200px;
   border-radius: 100px;
 }
@@ -184,4 +184,24 @@ border-radius: 100px;
     color: white;
     border-radius: 5px;
 }
-
+.user-detais-container{
+  height: 100vh;
+  width: 75%;
+  margin: auto;
+}
+.user-img img{
+width: 200px;
+height: 200px;
+border-radius:100px;
+}
+.user-all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.all-appointment-container{
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+}

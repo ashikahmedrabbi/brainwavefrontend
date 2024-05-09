@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+        <!-- Bootstrap link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+      
+        <!-- Css link -->
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+      
+        <!-- font link -->
+      
+        <script src="https://kit.fontawesome.com/4ee5f1f089.js" crossorigin="anonymous"></script>
+      
+        <title>BrainWave</title>
+
+        <style>
+            /* Add your CSS styles here */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            h1, h2, h3 {
+                color: #333;
+            }
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            input[type="text"], input[type="email"], textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+      </head>
+<body>
+    <!-- navbar starts -->
+  <section class="bg-body-tertiary fixed-top z-index-2000">
+    <nav class="navbar navbar-expand-lg px-5 py-2">
+      <div class="container-fluid">
+        <a class="navbar-brand mr-5 pr-5 " href="#">
+          <img class="w-50% h-25%" src="images/BrainWave.png" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="ms-5 ps-5">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="#service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="#Blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="Contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+      </div>
+      </div>
+
+      
+    </nav>
+  </section>
+  <div class="container">
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
