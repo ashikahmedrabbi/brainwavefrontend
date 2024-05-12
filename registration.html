@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration</title>
+    <title>BrainWave-Registration</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,83 +20,223 @@
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <nav class="d-flex justify-content-around align-items-center p-4">
-      <div class="logo-container d-flex align-items-center gap-2">
-        <img src="./Images/stethoscope 1.png" alt="" />
-        <h3>BrainWave</h3>
-      </div>
-      <div class="menu-container d-flex gap-3">
-        <li class="menu"><a href="index.html">Home</a></li>
-      
-        <li class="menu"><a target="_blank" href="login.html">Login</a></li>
+   <!-- navbar starts -->
+   <section class="bg-body-tertiary fixed-top z-index-2000">
+    <nav class="navbar navbar-expand-lg px-5 py-2">
+      <div class="container-fluid">
+        <a class="navbar-brand mr-5 pr-5" href="index.html">
+          <img src="images/BrainWave.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="ms-5 ps-5">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="allTeachers.html">Teachers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       
+
+         
+
+          <button
+            type="button"
+            class="ms-4 px-4 btn custom-bg-color custom-bg-color:hover text-white text-decoration-none"
+          >
+            <a href="login.html" class="text-decoration-none text-white ">Login </a>
+          </button>
+        </div>
       </div>
     </nav>
+  </section>
 
-    <div class="login-container">
-      <div class="col-md-6">
-        <h1 class="title mt-5">Please Registration</h1>
+  <!-- navbar end -->
+    
+
+    <div class="mt-5 pt-2">
+
+    </div>
+    <div class="mt-5 pt-5">
+
+    </div>
+
+    <div class="login-container mt-5 pt-5">
+      <div class="col-md-6 border border-dark text-center rounded">
+        <h1 class="custom-color mt-5 mb-4">Please Registration</h1>
         <form action="" onsubmit="handleRegistration(event)">
           <p id="error" class="text-danger"></p>
           <input
             id="username"
             type="text"
-            class="input w-100"
+            class="py-2 border border-dark rounded ps-4 w-75 ms-2 mb-4"
             placeholder="username"
             required
           />
+          
+          
           <input
             id="first_name"
             type="text"
-            class="input w-100"
+            class="py-2 border border-dark rounded ps-4 w-75 ms-2 mb-4"
             placeholder="First Name"
             required
           />
+          
+          
           <input
             id="last_name"
             type="text"
-            class="input w-100"
+            class="py-2 border border-dark rounded ps-4 w-75 ms-2 mb-4"
             placeholder="last Name"
             required
           />
 
+          
+         
+
           <input
             id="email"
             type="email"
-            class="input w-100"
+            class="py-2 border border-dark rounded ps-4 w-75 ms-2 mb-4"
             placeholder="Email"
             required
           />
+          
           <input
             id="password"
             type="password"
-            class="input w-100"
+            class="py-2 border border-dark rounded ps-4 w-75 ms-2 mb-4"
             placeholder="password"
             required
           />
+          
           <input
             id="confirm_password"
             type="password"
-            class="input w-100"
+            class="py-2 border border-dark rounded ps-4 w-75 ms-2 mb-4"
             placeholder="Confirm password"
             required
           />
-          <input type="submit" class="submit-btn mt-2 w-100" value="Registration" />
-          <p><a href="login.html">go to login page</a></p>
+          
+          <input type="submit" class="btn custom-bg-color custom-bg-color:hover text-white text-decoration-none w-75 ms-2 mt-2 mb-2" value="Registration" />
+          
+          
+
+            <div class="text-center mb-5 mt-4">
+
+              <a href="login.html" class="text-black text-decoration-nonen w-75 text-center "
+              >Already Have an Account?</a
+            >
+
+            </div>
+            
+        
+         
         </form>
       </div>
       <div class="col-md-6">
-        <img class="w-100" src="./Images/login.jpg" alt="" />
+        <img class="w-100" src="https://img.freepik.com/free-vector/end-school-concept-illustration_114360-9208.jpg?t=st=1715258977~exp=1715262577~hmac=9073e77984f3636fa46f566ac3914e025a4944dab6b2c84833d43ca224bc2e5e&w=740" alt="" />
       </div>
     </div>
 
-    <footer class="p-5">
-      <div class="container w-75 m-auto row p-5">
-        <div class="col-md-6">
-          
-      <p class="text-center mt-3">
-        <small>Copyright © BrainWave. All Rights Reserved</small>
-      </p>
-    </footer>
+    <div class="mt-5 pt-5">
+      <div class="pt-5 mt-5">
+
+      </div>
+
+    </div>
+
+    <section class="bg-black custom-background-footer mt-5 pt-3">
+
+      <div class="container-lg pt-5 pb-5 text-white  ">
+  
+        <div class="row row-cols-1 row-cols-md-3  pb-5 ">
+          <div class="col ">
+            <div class="text-white mt-5">
+              <img src="images/BrainWave.png" alt="">
+              <p class="mt-4">Unlock your potential with BrainWave: Your go-to educational website for interactive learning. Explore, discover, and excel with our curated resources.</p>
+  
+             
+            </div>
+          </div>
+          <div class="col ps-5">
+            <div class="text-white mt-5">
+              <h4 class="pt-2 c1 c1:hover">Online Platform</h4>
+              <p class="pt-4 c1 c1:hover">About</p>
+              <p class="c1 c1:hover">Courses</p>
+              <p class="c1 c1:hover">Blog</p>
+              
+              <p class="c1 c1:hover">Instructor Profile</p>
+             
+            </div>
+          </div>
+  
+        
+          <div class="col">
+            <div class="text-white mt-5">
+              <h4 class="pt-2 c1 c1:hover">Contacts</h4>
+              <p class="pt-4">Enter your email address to register to our newsletter subscription</p>
+              <p class="mt-2">
+                Add:
+                70-80 Upper St Norwich NR2
+              </p>
+              <p>Call:+01 123 4567 890</p>
+              <p>
+                Email:info@eduweb.com
+              </p>
+  
+            </div>
+          </div>
+  
+  
+  
+  
+        </div>
+  
+  
+        <div class="text-center">
+  
+          <p className="text-white text-center ">
+            <small>Copyright ©2024 BrainWave. All Rights Reserved</small>
+          </p>
+           
+        </div>
+       
+         
+       
+      </div>
+    </section>
+
+   
     <!-- script tag from here  -->
     <script src="./app.js"></script>
     <script src="./auth.js"></script>
@@ -110,5 +250,6 @@
       crossorigin="anonymous"
       defer
     ></script>
+    
   </body>
 </html>

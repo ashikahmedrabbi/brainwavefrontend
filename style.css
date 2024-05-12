@@ -109,62 +109,67 @@
   height: 400px;
 }
 
-.service-container{
+.service-container {
   width: 1200px;
   margin: auto;
   margin-top: 50px;
-  
 }
 
-.title{
+.title {
   font-size: 44px;
   color: #ff9fae;
   text-align: center;
-
 }
 
-.teacher-container{
-
+.teacher-container {
   margin-top: 50px;
   padding: 30px;
 }
-.doc-card{
+/* .doc-card {
   width: 300px;
 
   height: 100%;
   box-shadow: 4px 4px 8px gray;
   border-radius: 10px;
-  text-align:center;
-  padding: 15px;
+  text-align: center;
+  padding: 15px; 
+}*/
+.doc-img {
+  width: 100%;
+  height: 220px;
+  border-radius: 5px;
 }
-.doc-img{
-  width: 100px;
-  height: 100px;
+.blog-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.about-img {
+  width: 100%;
+  height: 100%;
   border-radius: 50px;
 }
 
-.review-card{
+.review-card {
   width: 250px;
   height: 300px;
   box-shadow: 4px 4px 8px gray;
-  border-radius:10px;
+  border-radius: 10px;
   text-align: center;
   padding: 10px;
 }
-.review-card img{
+.review-card img {
   width: 70px;
   height: 70px;
-  border-radius:50px;
+  border-radius: 50px;
 }
 
-
-
-.doctor-img img{
-width: 150px;
-height: 150px;
-border-radius: 100px;
+.doctor-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
 }
-.doc-details-container{
+.doc-details-container {
   display: flex;
   justify-content: space-around;
   padding: 30px;
@@ -172,36 +177,67 @@ border-radius: 100px;
   width: 50%;
   margin: auto;
 }
-.doc-details-container img{
+.doc-details-container img {
   width: 200px;
   height: 200px;
   border-radius: 100px;
 }
-.doc-detail-btn{
-    border: none;
-    padding:5px 10px;
-    background-color:gray;
-    color: white;
-    border-radius: 5px;
+.doc-detail-btn {
+  border: none;
+  padding: 5px 10px;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
 }
-.user-detais-container{
+.user-detais-container {
   height: 100vh;
   width: 75%;
   margin: auto;
 }
-.user-img img{
-width: 200px;
-height: 200px;
-border-radius:100px;
+.user-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
 }
-.user-all{
+.user-all {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
 }
-.all-appointment-container{
+.all-appointment-container {
   width: 90%;
   margin: auto;
   height: 100vh;
+}
+.about-box1 {
+  background-color: #87b7e5;
+}
+.about-box2 {
+  background-color: #edf4fb;
+}
+.about-box3 {
+  background-color: #1e4870;
+}
+.about-text {
+  color: #1e4870;
+}
+.about-bg {
+  background-color: #e5e5e5;
+}
+.about-bg3 {
+  background-color: #d1c4f9;
+}
+.about-box1-bg {
+  background-color: #87b7e5;
+  border-radius: 50%;
+}
+.about-bg1 {
+  background-color: #d1c4f9;
+  border-radius: 50%;
+}
+.about-section {
+  background-image: url("https://e0.pxfuel.com/wallpapers/516/379/desktop-wallpaper-aesthetic-lavender-background-pastel-aesthetic-pastel-purple-baby-purple.jpg");
+  background-size: cover;
+  background-position: center;
 }

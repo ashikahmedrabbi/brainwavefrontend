@@ -59,42 +59,53 @@ const loadteachers = (search) => {
 
 const displyteachers = (teachers) => {
   teachers?.forEach((teacher) => {
-    
     const parent = document.getElementById("teachers");
     const div = document.createElement("div");
-    div.classList.add("doc-card");
+    // div.classList.add("doc-card");
     div.innerHTML = `
     
          
 
-          <div class="col">
-          <div class="card custom-bg-color-card4">
-            <div class="text-center">
-            <img class="doc-img" src=${teacher.image} alt="" />
-            </div>
-            <div class="card-body text-center">
-            <h4>${teacher?.full_name}</h4>
-                <h6>${teacher?.designation[0]}</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-                  numquam!
-                </p>
-               
-                <p>
-                
-                ${teacher?.teaching_area?.map((item) => {
-                  return `<button class="mx-2 my-2">${item}</button>`;
-                })}
-                </p>
-              <button type="button" class="text-black btn btn-light  mb-4">
-              <a target="_blank" href="teacher.html?id=${
-                teacher.id
-              }">Details <i class="fa-solid fa-arrow-right"></i></a> 
-              </button>
-
-            </div>
-          </div>
+    <div class="col ">
+    <div class="card mt-4 ">
+      <img
+        src=${teacher.image}
+        class="card-img-top img-thumbnail doc-img" width="300" height="100"
+        alt="..."
+      />
+      <div class="card-body">
+        
+        <div class="d-flex justify-content-between align-items-center card-title px-2">
+        <div>
+        <h5>${teacher?.full_name}</h5>
+      </div>
+      <div>
+      <p class="mt-2 fw-bold">${teacher?.designation[0]}</p>
+      </div>
         </div>
+        <div class="px-3">
+        <p class="">
+        This is a longer card with supporting text below as a natural
+        lead-in to additional content. This content is a little bit
+        longer.
+      </p>
+      <p>
+                
+      ${teacher?.teaching_area?.map((item) => {
+        return `<button class=" btn btn-outline-info my-1 px-1">${item}</button>`;
+      })}
+      </p>
+        
+      <button type="button" class="text-black btn btn-light  mb-4">
+      <a  class="text-decoration-none" target="_blank" href="teacher.html?id=${
+        teacher.id
+      }">Details <i class="fa-solid fa-arrow-right"></i></a> 
+      </button>
+
+    </div>
+      </div>
+    </div>
+  </div>
 
         `;
 
@@ -185,9 +196,6 @@ const handleLogin = (event) => {
       });
   }
 };
-
-
-
 
 loadDesignation();
 loadSpecialization();

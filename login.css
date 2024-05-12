@@ -1,43 +1,81 @@
-body{
-    background-color:white;
-    text-decoration: none;
+body {
+  background-color: white;
+  text-decoration: none;
 }
-.login-container{
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items:center;
-    width:75%;
-    margin: auto;
+.login-container {
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+  align-items: start;
+  width: 80%;
+  margin: auto;
 }
-.input{
-    padding: 15px 25px;
-    border: none;
-    margin: 10px;
-    box-shadow: 4px 4px 8px gray;
-    border-radius: 5px;
+.allTeacher-container {
+  /* height: 100vh; */
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+  align-items: start;
+  width: 85%;
+  margin: auto;
 }
-.submit-btn{
-    padding: 15px 25px;
-    width:85%;
-    margin: auto;
-    border: none;
-    background-color: rgb(43, 121, 121);
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
+.login-container1 {
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+  /* align-items: center; */
+  width: 80%;
+  margin: auto;
 }
-li{
-    list-style: none;
-    display: inline;
+.input {
+  padding: 15px 25px;
+  border: 10px;
+  margin: 10px;
+  box-shadow: 4px 4px 8px gray;
+  border-radius: 5px;
+}
+.submit-btn {
+  padding: 15px 25px;
+  width: 85%;
+  margin: auto;
+  border: none;
+  background-color: rgb(43, 121, 121);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.submit-btn1 {
+  padding: 15px 25px;
+  width: 85%;
+  margin: auto;
+  border: none;
+  /* background-color: rgb(43, 121, 121); */
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.submit-btn2 {
+  padding: 10px 20px;
+  width: 85%;
+  margin: auto;
+  border: none;
+  /* background-color: rgb(43, 121, 121); */
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+li {
+  list-style: none;
+  display: inline;
 }
 
 li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(43, 121, 121);
-    margin: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(43, 121, 121);
+  margin: 10px;
 }
