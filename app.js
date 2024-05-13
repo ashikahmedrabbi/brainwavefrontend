@@ -197,6 +197,38 @@ const handleLogin = (event) => {
   }
 };
 
+// --------------------------------------------------------------------------------//
+
+// Check if the user is logged in
+const isLoggedIn = () => {
+  const token = localStorage.getItem("token");
+  return token !== null; // Assuming you store a token in localStorage when the user is logged in
+};
+
+// Function to toggle visibility of login/logout buttons
+const toggleNavbarButtons = () => {
+  const loginButton = document.getElementById("loginButton");
+  const logoutButton = document.getElementById("logoutButton");
+
+  if (isLoggedIn()) {
+    // If user is logged in, show logout button and hide login button
+    logoutButton.style.display = "block";
+    loginButton.style.display = "none";
+  } else {
+    // If user is not logged in, show login button and hide logout button
+    logoutButton.style.display = "none";
+    loginButton.style.display = "block";
+  }
+};
+
+// Call the toggleNavbarButtons function when the page loads
+document.addEventListener("DOMContentLoaded", toggleNavbarButtons);
+
+// Optionally, you can also call toggleNavbarButtons whenever a user logs in or logs out
+// For example, after a successful login or logout operation
+
+// --------------------------------------------------------------------------------//
+
 loadDesignation();
 loadSpecialization();
 loadServices();

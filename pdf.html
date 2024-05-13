@@ -33,64 +33,72 @@
 
 
      <!-- navbar starts -->
-  <section class="bg-body-tertiary fixed-top z-index-2000">
-    <nav class="navbar navbar-expand-lg px-5 py-2">
-      <div class="container-fluid">
-        <a class="navbar-brand mr-5 pr-5" href="index.html">
-          <img src="images/BrainWave.png" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="ms-5 ps-5">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active px-4" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active px-4" aria-current="page" href="allTeachers.html">Teachers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active px-4" aria-current="page" href="service.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active px-4" aria-current="page" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active px-4" aria-current="page" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active px-4" aria-current="page" href="Contact.html">Contact</a>
-              </li>
-            </ul>
+     <section class="bg-body-tertiary fixed-top z-index-2000">
+      <nav class="navbar navbar-expand-lg px-5 py-2">
+        <div class="container-fluid">
+          <a class="navbar-brand mr-5 pr-5" href="index.html">
+            <img src="images/BrainWave.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="ms-5 ps-5">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active px-4" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active px-4" aria-current="page" href="allTeachers.html">Teachers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active px-4" aria-current="page" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active px-4" aria-current="page" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active px-4" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active px-4" aria-current="page" href="Contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+         
+  
+           
+  
+            <button
+              type="button"
+              class="ms-4 px-4 btn custom-bg-color custom-bg-color:hover text-white text-decoration-none"
+              id="loginButton"
+            >
+              <a href="login.html" class="text-decoration-none text-white ">Login </a>
+            </button>
+  
+  
+            <button id="logoutButton" type="button" class="ms-4 px-4 btn custom-bg-color custom-bg-color:hover text-white text-decoration-none" onclick="handlelogOut()" style="display: none;">
+              Logout
+            </button>
+  
+  
+  
           </div>
         </div>
-       
-
-         
-
-          <button
-            type="button"
-            class="ms-4 px-4 btn custom-bg-color custom-bg-color:hover text-white text-decoration-none"
-          >
-            <a href="login.html" class="text-decoration-none text-white ">Login </a>
-          </button>
-        </div>
-      </div>
-    </nav>
-  </section>
-
+      </nav>
+    </section>
   <!-- navbar end -->
 
   <div class="mt-5 pt-2">
@@ -102,16 +110,17 @@
 
 
   <div class="text-center ">
-    <div class=" container-lg mb-5">
-
-        <h1 class="font2 fw-bold">
-           <span class="custom-color">Appointment Done!!</span>
-        </h1>
-        <p>Consectetur adipiscing elit sed do eiusmod tempor.</p>
-
-      </div>
+    
 
       <div id="pdf-container" class="pdf-container text-center">
+        <div class=" container-lg mb-5">
+
+          <h1 class="font2 fw-bold">
+             <span class="custom-color">Appointment Done!!</span>
+          </h1>
+          <p>Consectetur adipiscing elit sed do eiusmod tempor.</p>
+  
+        </div>
         <h1 class="text-info text-center p-5 mt-5">Brainwave</h1>
       </div>
     <button onclick="handleDownload()" class="btn custom-bg-color custom-bg-color:hover text-white text-decoration-none  ms-5 mt-2 mb-2">Download Pdf</button>
@@ -203,5 +212,6 @@
     ></script>
 
     <script src="./app.js"></script>
+    <script src="logout.js"></script>
   </body>
 </html>

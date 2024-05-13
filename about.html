@@ -30,7 +30,7 @@
    <!-- navbar start -->
 
 
-  <section class="bg-body-tertiary fixed-top z-index-2000">
+   <section class="bg-body-tertiary fixed-top z-index-2000">
     <nav class="navbar navbar-expand-lg px-5 py-2">
       <div class="container-fluid">
         <a class="navbar-brand mr-5 pr-5" href="index.html">
@@ -80,9 +80,18 @@
           <button
             type="button"
             class="ms-4 px-4 btn custom-bg-color custom-bg-color:hover text-white text-decoration-none"
+            id="loginButton"
           >
             <a href="login.html" class="text-decoration-none text-white ">Login </a>
           </button>
+
+
+          <button id="logoutButton" type="button" class="ms-4 px-4 btn custom-bg-color custom-bg-color:hover text-white text-decoration-none" onclick="handlelogOut()" style="display: none;">
+            Logout
+          </button>
+
+
+
         </div>
       </div>
     </nav>
@@ -261,6 +270,9 @@
 
 
     <!-- footer ends -->
+
+    <script src="logout.js"></script>
+    <script src="app.js"></script>
 
 
 
