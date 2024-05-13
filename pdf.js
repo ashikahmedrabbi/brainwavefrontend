@@ -2,11 +2,11 @@ const handlePdf = () => {
   const teacher_id = new URLSearchParams(window.location.search).get("id");
   console.log(teacher_id);
   const user_id = localStorage.getItem("user_id");
-  console.log(`https://testing-8az5.onrender.com/users/${user_id}`);
-  fetch(`https://testing-8az5.onrender.com/teacher/list/${teacher_id}`)
+  console.log(`https://brainwave-zc9o.onrender.com/users/${user_id}`);
+  fetch(`https://brainwave-zc9o.onrender.com/teacher/list/${teacher_id}`)
     .then((res) => res.json())
     .then((data) => {
-      fetch(`https://testing-8az5.onrender.com/users/${user_id}`)
+      fetch(`https://brainwave-zc9o.onrender.com/users/${user_id}`)
         .then((res) => res.json())
         .then((pdData) => {
           const newData = [data, pdData];
